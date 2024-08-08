@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <h2>IT Company</h2>
+    
+    
+    <header>
+      <h2>Company</h2>
+    </header>
+    
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">TCS</a></li>
+          <li><a href="#">Wipro</a></li>
+       
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>TCS</h1>
+        <p>ata Consultancy Services is an IT services, consulting and business solutions organization that has been partnering with many of the world's largest businesses in their transformation journeys for over 56 years..</p>
+        
+        <h1>Wipro</h1>
+        <p>Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. It is one of the leading Indian Big Tech companies.</p>
+        
+        
+      </article>
+    </section>
+    
+    <footer>
+      <p>************************</p>
+    </footer>
+
+    
+</body>
+</html>
